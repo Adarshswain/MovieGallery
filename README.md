@@ -22,4 +22,4 @@ You may also see any lint errors in the console.
 
     npm start
     
-    Live Website :- https://mgallery45.herokuapp.com/
+    Live Website :- https://mgallery45.herokuapp.com
