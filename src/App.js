@@ -68,6 +68,17 @@ padding:30px;
 justify-content:space-evenly;
 gap:24px;
 `;
+const Button = styled.button`
+  /* Adapt the colors based on primary prop */
+  background: ${props => props.primary ? "palevioletred" : "white"};
+  color: ${props => props.primary ? "white" : "palevioletred"};
+
+  font-size: 22px;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 1px;
+`;
 
 function App() {
   const [searchQuery, updateSearchQuery] = useState();
@@ -95,6 +106,9 @@ function App() {
     <Container>
       <Header>
         {/* <button type="button" class="btn btn-primary">Primary</button> */}
+        <a href="https://react-form-registration.herokuapp.com/">
+          <Button primary>Login/Signup</Button>
+        </a>
 
         <AppName>The Movie app</AppName>
         <SearchBox>
